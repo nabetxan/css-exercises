@@ -21,6 +21,25 @@
   display: none;
 }
 
+.visible {
+  animation: expand 500ms ease-in-out;
+  transform-origin: top;
+}
+
+@keyframes expand {
+  0% {
+    transform: scaleY(0);
+  }
+
+  70% {
+    transform: scaleY(1.1);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
 ul.dropdown-menu li:hover {
   background: rgb(47, 46, 46);
 }
